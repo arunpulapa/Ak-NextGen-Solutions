@@ -1,0 +1,80 @@
+<section class="mobile-services">
+    <div class="hero">
+      <h1>Mobile Development Services</h1>
+      <p>Crafting mobile experiences that engage and perform!</p>
+    </div>
+  </section>
+  
+
+  <div class="web-development">
+
+    <!-- Details Section -->
+    <section class="details-timeline">
+        <h2>Our Expertise</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon frontend">
+                <i class="fab fa-android"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Android App Development</h3>
+              <p>
+                Custom Android apps tailored to your business needs using React, Kotlin , Ionic and Java.
+              </p>
+            </div>
+          </div>
+      
+          <div class="timeline-item">
+            <div class="timeline-icon backend">
+                <i class="fab fa-apple"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>iOS App Development</h3>
+              <p>
+                Delivering sleek and secure iOS apps built with Swift and Objective-C
+              </p>
+            </div>
+          </div>
+      
+          <div class="timeline-item">
+            <div class="timeline-icon cms">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Cross-Platform Development</h3>
+              <p>Apps that work seamlessly on both iOS and Android using React Native and Flutter.</p>
+            </div>
+          </div>
+      
+          <div class="timeline-item">
+            <div class="timeline-icon ecommerce">
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>UI/UX Design</h3>
+              <p>Designing intuitive and visually stunning user experiences for mobile apps.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+  
+    <!-- Portfolio Highlights Section -->
+    <section class="portfolio">
+      <h2 class="Portfolio_Highlights">Portfolio Highlights</h2>
+      <div class="portfolio-grid">
+        <div
+          class="portfolio-item"
+          *ngFor="let item of portfolioItems"
+        >
+          <img [src]="item.image" alt="{{ item.title }}" />
+          <div class="portfolio-info">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  

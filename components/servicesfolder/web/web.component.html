@@ -1,0 +1,86 @@
+<div class="web-development">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Creating Stunning, Responsive Websites That Perform!</h1>
+        <p>
+          Unlock the potential of the web with modern, innovative, and high-performing websites.
+        </p>
+        <!-- <button class="cta-btn">Get Started</button> -->
+      </div>
+    </section>
+  
+    <!-- Details Section -->
+    <section class="details-timeline">
+        <h2>Our Expertise</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon frontend">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Frontend Development</h3>
+              <p>
+                Expertise in building stunning user interfaces using HTML, CSS, JavaScript, React, Angular, and more.
+              </p>
+            </div>
+          </div>
+      
+          <div class="timeline-item">
+            <div class="timeline-icon backend">
+              <i class="fas fa-server"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Backend Development</h3>
+              <p>
+                Crafting scalable and secure backend solutions with Node.js, Python, PHP, and other technologies.
+              </p>
+            </div>
+          </div>
+      
+          <div class="timeline-item">
+            <div class="timeline-icon cms">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>CMS Integration</h3>
+              <p>
+                Seamless integration of CMS platforms like WordPress and Shopify for easy content management.
+              </p>
+            </div>
+          </div>
+      
+          <div class="timeline-item">
+            <div class="timeline-icon ecommerce">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>E-commerce Development</h3>
+              <p>
+                Creating custom e-commerce platforms tailored to your business needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+  
+    <!-- Portfolio Highlights Section -->
+    <section class="portfolio">
+      <h2 class="Portfolio_Highlights">Portfolio Highlights</h2>
+      <div class="portfolio-grid">
+        <div
+          class="portfolio-item"
+          *ngFor="let item of portfolioItems"
+        >
+          <img [src]="item.image" alt="{{ item.title }}" />
+          <div class="portfolio-info">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  

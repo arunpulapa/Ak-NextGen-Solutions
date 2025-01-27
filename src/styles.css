@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+h2{
+    color: #ff477e !important; 
+}
+h1 {
+    font-size: 3rem; /* Font size */
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Text shadow */
+  }
+  
+
+  
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

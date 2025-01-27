@@ -1,0 +1,74 @@
+<section class="portfolio">
+  <div class="wave-background"></div>
+  <div class="container">
+    <div class="portfolio-header">
+      <span class="subtitle">OUR PROJECTS</span>
+      <h1 class="title">Explore Our Diverse Portfolio That<br>Spans Across Industries And Scales.</h1>
+    </div>
+    
+    <!-- Web Projects Section -->
+    <div class="portfolio-category">
+      <h2 class="category-title">Web Projects</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-card" *ngFor="let item of webProjects">
+          <div class="card-image">
+            <img [src]="item.image" [alt]="item.title">
+            <button class="play-button" aria-label="Play video">
+              <svg width="80" height="80" viewBox="0 0 80 80">
+                <circle cx="40" cy="40" r="40" fill="white"/>
+                <path d="M55 40L32 54V26L55 40Z" fill="#FF6B00"/>
+              </svg>
+            </button>
+          </div>
+          <div class="card-content">
+            <h3>{{item.title}}</h3>
+            <p>{{item.description}}</p>
+            <a class="learn-more">
+              LEARN MORE
+              <svg width="20" height="20" viewBox="0 0 20 20">
+                <path d="M10 3L8.59 4.41L13.17 9H4V11H13.17L8.59 15.59L10 17L17 10L10 3Z" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Projects Section -->
+    <div class="portfolio-category">
+      <h2 class="category-title">Mobile Projects</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-card" *ngFor="let item of mobileProjects">
+          <div class="card-image">
+            <img [src]="item.image" [alt]="item.title">
+            <button class="play-button" aria-label="Play video">
+              <svg width="80" height="80" viewBox="0 0 80 80">
+                <circle cx="40" cy="40" r="40" fill="white"/>
+                <path d="M55 40L32 54V26L55 40Z" fill="#FF6B00"/>
+              </svg>
+            </button>
+          </div>
+          <div class="card-content">
+            <h3>{{item.title}}</h3>
+            <p>{{item.description}}</p>
+            <a class="learn-more">
+              LEARN MORE
+              <svg width="20" height="20" viewBox="0 0 20 20">
+                <path d="M10 3L8.59 4.41L13.17 9H4V11H13.17L8.59 15.59L10 17L17 10L10 3Z" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="portfolio-footer">
+      <button class="discover-projects">
+        DISCOVER PROJECTS
+        <svg width="20" height="20" viewBox="0 0 20 20">
+          <path d="M10 3L8.59 4.41L13.17 9H4V11H13.17L8.59 15.59L10 17L17 10L10 3Z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>

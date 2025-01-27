@@ -1,0 +1,35 @@
+<div class="contact-page"> 
+    <div class="contact-left">
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <p>We are eager to help you with your project. Let’s get connected!</p>
+      </div>
+      <div class="contact-form">
+        <form (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <input type="text" class="form-control" [(ngModel)]="contactForm.name" name="name" placeholder="Your Name *" required />
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" [(ngModel)]="contactForm.email" name="email" placeholder="Your Email *" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-control" [(ngModel)]="contactForm.phone" name="phone" placeholder="Your Phone *" required />
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" [(ngModel)]="contactForm.message" name="message" placeholder="Your Message *" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+    <div class="contact-right">
+      <div class="background-animation">
+        <div class="circle"></div>
+        <div class="circle-2"></div>
+      </div>
+      <div class="contact-image">
+        <img src="https://i.pinimg.com/736x/83/71/b3/8371b3512eb873adfd843958089a80bf.jpg" alt="Contact Us"/>
+      </div>
+    </div>
+  </div>
+  

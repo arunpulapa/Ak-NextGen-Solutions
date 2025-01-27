@@ -1,0 +1,45 @@
+/* Styling for the circular progress indicator */
+.scroll-progress {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.7); /* Transparent white background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.15s ease-out, opacity 0.3s ease-in-out;
+    opacity: 0.8; /* Slightly faded by default */
+  }
+  
+  .progress-circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: conic-gradient(#007bff 0% 0%, #f0f0f0 0% 100%); /* Create circular gradient */
+    transition: background 0.5s ease-in-out;
+  }
+  
+  .progress-label {
+    position: relative;
+    z-index: 1;
+    font-size: 12px;
+    color: black;
+  }
+  
+  /* Add hover effect for the circle */
+  .scroll-progress:hover {
+    background: rgba(0, 123, 255, 0.7); /* Darken the background on hover */
+  }
+  
+  /* Adjust the percentage font */
+  .scroll-progress span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
