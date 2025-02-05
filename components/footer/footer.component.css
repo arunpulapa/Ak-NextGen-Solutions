@@ -137,6 +137,17 @@
     background-color: white !important;
     transform: scale(1.1);
   }
+  .divider {
+    height: 2px;
+    background: linear-gradient(to right, #fd1d1d, #ff8a00); /* Gradient from red to orange */
+    margin: 20px 0;
+    width: 30%;
+    display: block;
+  }
+  
+  
+  
+  
   
   /* Responsive Design */
   @media (max-width: 768px) {
@@ -145,12 +156,14 @@
       align-items: center;
     }
     .quick-links{
-display: none !important;
+     display: none !important;
     }
   
     .footer-section {
       text-align: center;
       margin: 10px 0;
+      padding-left: 5px !important;
+      padding-right: 5px !important;
     }
   
     .footer-bottom {

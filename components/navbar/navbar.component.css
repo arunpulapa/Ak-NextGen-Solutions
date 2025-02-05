@@ -29,7 +29,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 22px 20px;
-  background-color: #05043e;
+  background-color: #06052a;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
   flex-wrap: wrap;
 }
@@ -37,9 +37,16 @@
   margin-left: 30px;
 }
 .navbar .brand {
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
+  font-family: 'Georgia', serif; /* Classic serif font */
+  font-size: 1.3rem; /* Large size for emphasis */
+  color: white; /* Gold color for a premium and classic look */
+  letter-spacing: 2px; /* Slight spacing for a more refined feel */
+  text-transform: uppercase; /* Uppercase for a stronger presence */
+  font-weight: bold; /* Bold for an impactful look */
+  position: relative;
+  display: inline-block;
+  
+
 }
 
 /* Toggle Button */

@@ -14,6 +14,7 @@ import { ConsultantComponent } from '../../components/servicesfolder/consultant/
 import { CursorEffectComponent } from '../../components/cursor-effect/cursor-effect.component';
 
 export const routes: Routes = [
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
     {path:'home', component: HomeComponent},
     {path:'about', component: AboutComponent},
     {path:'contact', component: ContactComponent},

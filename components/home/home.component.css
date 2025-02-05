@@ -159,6 +159,7 @@
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  margin-top: 30px !important;
 }
 
 .about-link:hover {
@@ -250,8 +251,8 @@
 }
 
 .imgexpertise {
-  width: 400px !important;
-  height: 250px !important;
+  width: 80% !important ;
+  height: 250px ;
 }
 
 .OUR-EXPERTISE {
@@ -506,6 +507,9 @@
   .imgexpertise[_ngcontent-ng-c417847089] {
     display: none;
   }
+    .imgexpertise[_ngcontent-ng-c2053015171] {
+        width: 100% !important;
+    }
 
   .expertise-item {
     flex-direction: column !important;
@@ -513,18 +517,21 @@
 
   .about-text {
     margin-bottom: 50px !important;
+    padding: 0 !important;
   }
+ 
 
   .hero {
-    height: 70vh !important;
+    height: 100vh !important;
   }
 
   .heroh1text {
     font-size: 30px !important;
+    letter-spacing: 0px !important;
   }
 
   .imgexpertise {
-    width: 300px !important;
+    width: 100% !important;
   }
    
   .cardcontact{
@@ -575,7 +582,7 @@
 }
 
 .heroh1text {
-  font-size: 36px !important;
+  font-size: 36px;
 }
 
 

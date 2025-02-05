@@ -443,6 +443,10 @@ body {
     border-radius: 20px;
     color: #fff;
 }
+.who-we-are-image-img[_ngcontent-ng-c3117746426] {
+  width: 300px !important;
+  height: 350px !important;
+}
 .hero-title[_ngcontent-ng-c604987560] {
 font-size: 1.5rem;
   width: 350px !important;
@@ -457,7 +461,7 @@ font-size: 1.5rem;
   margin-top: 30px;
 }
 .hero-btn{
-  width: 300px !important;
+  width: 100% !important;
 }
 .cta-button{
   width: 300px !important;
