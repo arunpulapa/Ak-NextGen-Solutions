@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms'; // <-- Import necessary form classes
 import { ReactiveFormsModule } from '@angular/forms'; // <-- Import ReactiveFormsModule
 import Swiper from 'swiper';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -23,6 +24,10 @@ export class HomeComponent {
       email: ['', [Validators.required, Validators.email]],
       message: ['', [Validators.required]]
     });
+     AOS.init({
+          duration: 1000, // Animation duration in milliseconds
+          once: true // Ensures animation runs only once
+        });
   }
 
   ngAfterViewInit(): void {

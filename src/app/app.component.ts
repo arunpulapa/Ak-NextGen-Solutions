@@ -4,6 +4,7 @@ import { NavbarComponent } from "../../components/navbar/navbar.component";
 import { FooterComponent } from "../../components/footer/footer.component";
 import { CursorEffectComponent } from "../../components/cursor-effect/cursor-effect.component";
 import { CommonModule } from '@angular/common';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -36,6 +37,12 @@ circleProgress: any;
   // Scroll to the top when the user clicks on the circle
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  ngOnInit(): void {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true // Ensures animation runs only once
+    });
   }
   
 }

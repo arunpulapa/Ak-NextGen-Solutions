@@ -10,7 +10,6 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-
   background-attachment: fixed;
 }
 
@@ -177,6 +176,51 @@
   transform: scale(1.05);
 }
 
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide In Left */
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Slide In Right */
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Bounce Effect */
+@keyframes bounceIn {
+  0% { transform: scale(0.9); opacity: 0; }
+  50% { transform: scale(1.05); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Apply Animations */
+.hero-content { 
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-image img {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-text {
+  opacity: 0;
+  animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.about-image {
+  opacity: 0;
+  animation: slideInRight 1s ease-in-out forwards;
+}
+
+
 
 
 
@@ -251,7 +295,7 @@
 }
 
 .imgexpertise {
-  width: 80% !important ;
+  width: 70% !important ;
   height: 250px ;
 }
 
@@ -595,20 +639,16 @@
 }
 
 /* .cardcontact{
-  padding-left: 10%;
-  padding-right: 7%;
-  margin-top: 30px;
-  border-radius: 10px;
-  background: white;
+  background:
+  url(https://i.ibb.co/Qjt7TJn/milad-fakurian-E8-Ufcyxz514-unsplash-1.jpg)
+  center / cover no-repeat fixed;
+
 } */
-
-
-
-
-/* General container styles */
 /* General container styles */
 .process-container {
-  background-color: whitesmoke;
+  background:
+  url(https://i.ibb.co/Qjt7TJn/milad-fakurian-E8-Ufcyxz514-unsplash-1.jpg)
+  center / cover no-repeat fixed;
   color: #ffffff;
   text-align: center;
   padding: 3rem 1rem;
@@ -622,8 +662,9 @@
 /* Title styles */
 .title {
   font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 3rem;
+  font-weight: 600 !important;
+  margin-bottom: 3rem !important;
+  color: black !important;
 }
 
 /* Steps container */
@@ -632,17 +673,27 @@
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap; /* Ensure it adjusts for smaller screens */
+  
 }
 
 /* Each step box */
 .step-box {
-  background-color: #3c3c42; /* Slightly lighter box background */
-  border-radius: 10px;
   width: 300px;
   padding: 2rem;
   text-align: left;
   position: relative;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 500px;
+  height: 300px;
+  padding: 35px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -684,7 +735,7 @@
 .step-description {
   font-size: 0.95rem;
   line-height: 1.5;
-  color: #cccccc; /* Muted description */
+ color: black;
 }
 
 /* Title styles */
