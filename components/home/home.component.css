@@ -594,13 +594,69 @@
   .expertise-item {
     flex-direction: column !important;
   }
+
   
   
+}
+@media screen and (max-width: 768px) {
+     .hero {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+ .hero1{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+
+ }
+ .hero h1 {
+    font-size: 30px !important;
+    letter-spacing: 0px !important;
+  }
+  .hero-content {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .hero-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .imgexpertise {
+    width: 100% !important;
+  }
+
+  .contact-left {
+    padding: 2rem !important;
+    flex: none !important;
+    width: 100% !important;
+  }
+
+  .cardcontact{
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+}
+  .expertise-item {
+    flex-direction: column !important;
+  }
+
+  .about-text {
+    margin-bottom: 50px !important;
+    padding: 0 !important;
+  }
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: -140px !important;
+  }
+
 }
 
 /* Medium devices (landscape tablets, smaller laptops) */
 @media (min-width: 769px) and (max-width: 992px) {
-  /* Styles for 769px - 992px */
+  /* Styles for 769px - 9
+  92px */
  
 }
 
@@ -620,10 +676,7 @@
   padding-right: 4%;
 }
 
-.hero1 {
-  padding-left: 4%;
-  padding-right: 4%;
-}
+
 
 .heroh1text {
   font-size: 36px;
@@ -805,3 +858,6 @@
   line-height: 1.5;
   color: #cccccc; /* Slightly muted text for description */
 }
+
+
+
